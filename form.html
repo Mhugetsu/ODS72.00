@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <title>Formulário - ODS 7</title>
+</head>
+
+<body>
+    <header>
+        <div class="title-container">
+            <h1>
+                <span class="top">Objetivo de</span>
+                <span class="middle">Desenvolvimento</span>
+                <span class="bottom">Sustentável</span>
+            </h1>
+            <div class="big-number">7</div>
+        </div>
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="form.html">Formulário</a></li>
+                <li><a href="form_submissions.html">Lista de envios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form">
+            <h2>Formulário</h2>
+            <form id="form" action="process.php" method="post" onsubmit="return showConfirmation()">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <label for="country">País:</label>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Selecione um país</option>
+                    <option value="1">Brasil</option>
+                    <option value="2">Estados Unidos</option>
+                    <option value="3">Canadá</option>
+                    <option value="4">Reino Unido</option>
+                    <option value="5">França</option>
+                    <option value="6">Austrália</option>
+                    <option value="7">Japão</option>
+                    <option value="8">Alemanha</option>
+                    <option value="9">China</option>
+                    <option value="10">Índia</option>
+                    <option value="11">México</option>
+                    <option value="12">Itália</option>
+                    <option value="13">Espanha</option>
+                    <option value="14">Rússia</option>
+                    <option value="15">África do Sul</option>
+                    <option value="16">Angola</option>
+                </select>
+                <label for="subscribe">Assinar Newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <p></p>
+
+                <button id="submit-button" type="submit">Enviar</button>
+                <button class="action-button" type="button" onclick="clearForm()">Limpar Campos</button>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 - Seu Nome</p>
+    </footer>
+</body>
+
+</html>

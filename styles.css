@@ -1,0 +1,185 @@
+/* Estilos gerais */
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-image: url('banner.png');
+    background-color: #333;
+    color: #fff;
+    padding: 5%;
+    text-align: center;
+}
+
+nav ul {
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.information img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+h1 {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 0px;
+}
+
+span.top, span.middle, span.bottom {
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.big-number {
+    color: rgb(255, 255, 255);
+    font-size: 12em; 
+    padding: 5px 10px;
+    margin-right: 0;
+    border-radius: 50%;
+}
+
+
+.access-section {
+    background-color: #fff; 
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+.access-section h2 {
+    font-size: 24px; 
+}
+
+.access-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.access-section p {
+    margin: 10px 0;
+}
+
+
+/* Estilos do formulário */
+.form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea,
+.form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #555;
+}
+
+
+/* Botões de ação no formulário */
+.action-button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Botões de exclusão na lista de envios */
+.delete-button {
+    background-color: #f44336; /* Vermelho */
+    color: white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Botão de excluir todos os itens */
+.delete-all-button {
+    background-color: #f44336; /* Vermelho */
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submission-list li {
+    margin-bottom: 10px; /* Ajuste a quantidade de espaço conforme necessário */
+}
